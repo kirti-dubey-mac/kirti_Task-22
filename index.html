@@ -25,17 +25,67 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="bg-gradient-to-b from-orange-100 to-white pt-20 pb-40 px-6">
+  <section class="bg-gradient-to-b from-orange-100 to-white pt-16 pb-32 px-6">
     <div class="max-w-3xl mx-auto text-center">
-      <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+      <h1 class="text-3xl md:text-4xl font-bold leading-tight">
         Write, plan, share.<br />
         With AI at your side.
       </h1>
-      <p class="mt-5 text-gray-600 max-w-xl mx-auto">
+      <p class="mt-4 text-gray-600 max-w-xl mx-auto text-sm">
         It's the connected workspace where better, faster work happens. Now with AI.
       </p>
-      <div class="mt-8 flex items-center justify-center gap-4">
-        <a href="#" class="bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800">Get AI free →</a>
-        <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700">Request a demo</a>
+      <div class="mt-6 flex items-center justify-center gap-4">
+        <a href="#" class="bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 text-sm">Get AI free →</a>
+        <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 text-sm">Request a demo</a>
       </div>
     </div>
+  </section>
+
+  <!-- Dashboard Preview Section -->
+  <section class="relative max-w-4xl mx-auto px-6 -mt-16 mb-32">
+    <div class="relative bg-white rounded-xl shadow-2xl border border-gray-100 h-72 overflow-visible">
+
+      <img src="https://picsum.photos/seed/dashboard/900/400"
+           class="w-full h-full object-cover rounded-xl" alt="Dashboard preview" />
+
+      <!-- Floating Card 1: Tasks -->
+      <div class="absolute -top-6 -left-6 bg-white shadow-lg rounded-lg p-3 w-44 border border-gray-100 flex items-center gap-3">
+        <div class="w-8 h-8 rounded-md bg-pink-100 flex items-center justify-center text-pink-500 text-sm">📋</div>
+        <div>
+          <p class="text-xs text-gray-500">Tasks</p>
+          <p class="text-sm font-semibold">12 completed</p>
+        </div>
+      </div>
+
+      <!-- Floating Card 2: Project Status -->
+      <div class="absolute top-1/4 -right-8 bg-white shadow-lg rounded-lg p-3 w-48 border border-gray-100 flex items-center gap-3">
+        <div class="w-8 h-8 rounded-md bg-green-100 flex items-center justify-center text-green-600 text-sm">✅</div>
+        <div>
+          <p class="text-xs text-gray-500">Project Status</p>
+          <p class="text-sm font-semibold text-green-600">On track</p>
+        </div>
+      </div>
+
+      <!-- Floating Card 3: Team Activity -->
+      <div class="absolute -bottom-6 left-1/4 bg-white shadow-lg rounded-lg p-3 w-52 border border-gray-100">
+        <p class="text-xs text-gray-500 mb-1">Team Activity</p>
+        <div class="flex items-center gap-2">
+          <div class="flex -space-x-2">
+            <img src="https://i.pravatar.cc/40?img=1" class="w-6 h-6 rounded-full border-2 border-white" alt="avatar" />
+            <img src="https://i.pravatar.cc/40?img=2" class="w-6 h-6 rounded-full border-2 border-white" alt="avatar" />
+            <img src="https://i.pravatar.cc/40?img=3" class="w-6 h-6 rounded-full border-2 border-white" alt="avatar" />
+          </div>
+          <p class="text-sm font-semibold">5 members online</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Fixed Chat Widget -->
+  <button class="fixed bottom-6 right-6 z-50 bg-black text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center hover:bg-gray-800">
+    💬
+  </button>
+
+</body>
+</html>
